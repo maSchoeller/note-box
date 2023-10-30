@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
     <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="MaSchoeller.NoteBox.styles.css" />
-    <HeadOutlet @rendermode="@RenderMode.InteractiveWebAssembly" />
+    <link rel="stylesheet" href="MaSchoeller.NoteBox.ServerHost.styles.css" />
+	<link href="_content/Microsoft.FluentUI.AspNetCore.Components/css/reboot.css" rel="stylesheet" />
+	<link href="manifest.webmanifest" rel="manifest" />
+	<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+	<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <HeadOutlet @rendermode="@(new InteractiveWebAssemblyRenderMode(false))" />
 </head>
 
 <body>
-    <Routes @rendermode="@RenderMode.InteractiveWebAssembly" />
+	<Routes @rendermode="@(new InteractiveWebAssemblyRenderMode(false))" />
     <script src="_framework/blazor.web.js"></script>
+	<script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 
 </html>

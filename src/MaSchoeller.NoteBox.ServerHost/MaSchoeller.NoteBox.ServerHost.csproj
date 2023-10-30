@@ -1,14 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\MaSchoeller.NoteBox.Client\MaSchoeller.NoteBox.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0-rc.2.23480.2" />
-  </ItemGroup>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MaSchoeller.NoteBox.WebClient\MaSchoeller.NoteBox.WebClient.csproj" />
+        <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components"  />
+
+    </ItemGroup>
 
 </Project>

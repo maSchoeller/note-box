@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34219.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaSchoeller.NoteBox", "MaSchoeller.NoteBox\MaSchoeller.NoteBox\MaSchoeller.NoteBox.csproj", "{15A9ACFD-602D-4B78-B8FA-D97B6FA8DA84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaSchoeller.NoteBox.ServerHost", "src\MaSchoeller.NoteBox.ServerHost\MaSchoeller.NoteBox.ServerHost.csproj", "{9D4D4C2A-B645-49ED-ABCF-87C99C6533CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaSchoeller.NoteBox.Client", "MaSchoeller.NoteBox\MaSchoeller.NoteBox.Client\MaSchoeller.NoteBox.Client.csproj", "{46BDFED6-5DA9-46FE-8688-A5499506348B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaSchoeller.NoteBox.WebClient", "src\MaSchoeller.NoteBox.WebClient\MaSchoeller.NoteBox.WebClient.csproj", "{CBCA0E44-C2DE-4CD1-B564-E93BCF94598B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{251CB453-1D4E-409F-BC13-613553B2FBB1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaSchoeller.NoteBox.Contracts", "MaSchoeller.NoteBox.Contracts\MaSchoeller.NoteBox.Contracts.csproj", "{56BC9D9F-86C6-4E8C-9ACB-AC7A211A7A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +22,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{15A9ACFD-602D-4B78-B8FA-D97B6FA8DA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15A9ACFD-602D-4B78-B8FA-D97B6FA8DA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15A9ACFD-602D-4B78-B8FA-D97B6FA8DA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15A9ACFD-602D-4B78-B8FA-D97B6FA8DA84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46BDFED6-5DA9-46FE-8688-A5499506348B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46BDFED6-5DA9-46FE-8688-A5499506348B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46BDFED6-5DA9-46FE-8688-A5499506348B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46BDFED6-5DA9-46FE-8688-A5499506348B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4D4C2A-B645-49ED-ABCF-87C99C6533CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4D4C2A-B645-49ED-ABCF-87C99C6533CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4D4C2A-B645-49ED-ABCF-87C99C6533CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4D4C2A-B645-49ED-ABCF-87C99C6533CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCA0E44-C2DE-4CD1-B564-E93BCF94598B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCA0E44-C2DE-4CD1-B564-E93BCF94598B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCA0E44-C2DE-4CD1-B564-E93BCF94598B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCA0E44-C2DE-4CD1-B564-E93BCF94598B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56BC9D9F-86C6-4E8C-9ACB-AC7A211A7A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BC9D9F-86C6-4E8C-9ACB-AC7A211A7A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BC9D9F-86C6-4E8C-9ACB-AC7A211A7A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BC9D9F-86C6-4E8C-9ACB-AC7A211A7A7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

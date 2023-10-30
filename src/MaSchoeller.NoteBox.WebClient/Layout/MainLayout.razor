@@ -1,9 +1,29 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+<FluentDesignSystemProvider AccentBaseColor="#185ABD"
+							BaseLayerLuminance="@((_isDark ? StandardLuminance.DarkMode : StandardLuminance.LightMode).GetLuminanceValue())">
+	<div style="min-height: 100vh">
+
+		<FluentHeader>
+			Zettelkasten
+
+			<FluentSpacer/>
+			Thememode
+			<FluentSwitch @bind-Value="_isDark" />
+		</FluentHeader>
+		@Body
+	</div>
+
+
+	<div id="blazor-error-ui">
+		An unhandled error has occurred.
+		<a href="" class="reload">Reload</a>
+		<a class="dismiss">🗙</a>
+	</div>
+</FluentDesignSystemProvider>
+
+
+
+
+
